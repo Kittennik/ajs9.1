@@ -10,7 +10,6 @@ test('Ближняя дистанция без дурмана', () => {
 test('Дальняя дистанция без дурмана', () => {
   const daemon = new Daemon('Petr');
   daemon.distance = 5;
-  daemon.stoned = false;
   expect(daemon.attack).toBe(60);
 });
 
